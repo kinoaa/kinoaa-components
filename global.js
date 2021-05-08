@@ -127,7 +127,7 @@ export default {
         this.clientData.accessKeySecret = STS.data.accessKeySecret
         // 传视频参数
         this.clientDataVideo = this.deepClone(this.clientData)
-        if (process.env.VUE_APP_BASE_API2 === 'http://test.manage.faceying.com') { // 测试服
+        if (process.env.VUE_APP_BASE_API2 === '') { // 测试服
           this.clientData.bucket = 'ly-dev'
           this.clientDataVideo.bucket = 'ly-dev-video'
         } else { // 正式服
@@ -156,7 +156,7 @@ export default {
         this.clientData.accessKeySecret = response.data.accessKeySecret
         // 传视频参数
         this.clientDataVideo = this.deepClone(this.clientData)
-        if (process.env.VUE_APP_BASE_API2 === 'http://test.manage.faceying.com') { // 测试服
+        if (process.env.VUE_APP_BASE_API2 === '') { // 测试服
           this.clientData.bucket = 'ly-dev'
           this.clientDataVideo.bucket = 'ly-dev-video'
         } else { // 正式服
