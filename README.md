@@ -1,3 +1,7 @@
+# global.js
+
+公共方法库，组件用到的所有的公共方法都在里面
+
 # MapChart.vue
 
 echarts-extension-amap+echars+ 高德API进行实现当日用户活跃地域分布图
