@@ -1,5 +1,5 @@
 /**
- * @author 凉城a 
+ * @author 凉城a (https://juejin.cn/user/166781499739358/posts)
  * @time 2022-09-15
  */
 const fileToDataURL = (file: Blob): Promise<any> => {
