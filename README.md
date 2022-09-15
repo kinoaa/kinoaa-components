@@ -13,3 +13,8 @@ echarts-extension-amap+echars+ 高德API进行实现当日用户活跃地域分�
 # SingleVideo.vue
 
 视频上传传组件
+
+# common
+公共方法文件夹
+## compression.ts
+vue3+ts图片压缩方法
