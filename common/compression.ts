@@ -1,3 +1,7 @@
+/**
+ * @author 凉城a 
+ * @time 2022-09-15
+ */
 const fileToDataURL = (file: Blob): Promise<any> => {
   return new Promise((resolve) => {
     const reader = new FileReader()
@@ -32,7 +36,7 @@ export const compressionFile = async(file, type = 'image/jpeg', quality = 0.5) =
   canvas.height = img.height
   context.clearRect(0, 0, img.width, img.height)
   context.drawImage(img, 0, 0, img.width, img.height)
-  const blob = (await canvastoFile(canvas, type, quality)) as Blob // quality:0.5可根据实际情况计算
+  const blob = (await canvastoFile(canvas, type, quality)) as Blob
   const newFile = await new File([blob], fileName, {
     type: type
   })
