@@ -375,4 +375,16 @@ function dataURLtoFile(dataurl, filename) {
   }
   return new File([u8arr], filename, { type: mime })
 }
-
+/**
+ * 保留小数点几位数, 自动补零, 四舍五入
+ * @param num: 数值
+ * @param digit: 小数点后位数
+ * @returns string
+ */
+function myFixed(num, digit) {
+  if(Object.is(parseFloat(num), NaN)) {
+    return console.log(`传入的值：${num}不是一个数字`);
+  }
+  num = parseFloat(num);
+  return (Math.round((num + Number.EPSILON) * Math.pow(10, digit)) / Math.pow(10, digit)).toFixed(digit);
+}
