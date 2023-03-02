@@ -72,7 +72,7 @@ export default defineComponent({
     }
     // 格式化数据，返回想要展示的数据格式
     const formatNumber = (val) => {
-      val = val.toFixed(props.start)
+      val = val.toFixed(props.decimals)
       val += ''
       const x = val.split('.')
       let x1 = x[0]
